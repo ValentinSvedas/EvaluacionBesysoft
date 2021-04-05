@@ -72,7 +72,7 @@ public class Vendedor {
 	
 	@Override
 	public String toString() {
-		return this.getNombre();
+		return this.getCodigo() +" - " +this.getNombre();
 	}
 	
 }
