@@ -1,2 +1,2 @@
 # EvaluacionBesysoft
-Consigna sobre venta de productos con filtross
+Consigna sobre venta de productos con filtros
