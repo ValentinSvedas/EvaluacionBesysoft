@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import filtros.Criterio;
+import utils.BBDD;
 
 public class Vendedor {
 
@@ -33,10 +34,11 @@ public class Vendedor {
 		return sueldo;
 	}
 	
-	public void agregarProducto(Producto p) { //Añade producto a la lista del vendedor
+	public void agregarProducto(Producto p, BBDD bd) { //Añade producto a la lista del vendedor
 		if(!this.productos.contains(p)) {
 			p.setVendedor(this);
 			productos.add(p);
+			bd.addProducto(p);
 		}
 	}
 	
@@ -69,7 +71,12 @@ public class Vendedor {
 		}
 		return pEncontrados;
 	}
-	
+
+	public Set<Producto> getProductos() {
+		Set<Producto> auxProductos = new HashSet<Producto>();
+		return auxProductos;
+	}
+
 	@Override
 	public String toString() {
 		return this.getCodigo() +" - " +this.getNombre();

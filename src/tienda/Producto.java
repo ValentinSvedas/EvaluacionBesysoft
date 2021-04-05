@@ -8,12 +8,13 @@ public class Producto {
 	private String categoria;
 	private Vendedor vendedor;
 	
-	public Producto(int codigo, String nombre, int precio, String categoria) {
+	public Producto(int codigo, String nombre, int precio, String categoria,Vendedor v) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.precio = precio;
 		this.categoria = categoria;
+		this.vendedor=v;
 	}
 
 	public int getPrecio() {
@@ -60,7 +61,7 @@ public class Producto {
 	
 	@Override
 	public String toString() {
-		return this.getNombre() + " precio: " +this.getPrecio();
+		return this.getNombre();
 	}
 
 }
