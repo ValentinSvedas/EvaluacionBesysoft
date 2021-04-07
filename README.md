@@ -31,7 +31,7 @@ Filtrar por categoria:
 ![EBCS4](https://user-images.githubusercontent.com/39970358/113797873-76a5de80-9728-11eb-8a40-4a98376f93a4.png)
 
 
-**- La tienda se implementó utilizando Hibernate(Base de datos), Maven(Gestor de librería), Lombok(Controlador de paquetes) y distintos patrones de diseño.**
+**- La tienda se implementó utilizando Hibernate(ORM), Maven(Gestor de librería), Lombok(Controlador de paquetes) y distintos patrones de diseño.**
 
 
 **- Para poder utilizar el programa de la tienda mediante la consola, ejecutar el main.**
